@@ -1,0 +1,242 @@
+$bg-main: rgb(0, 82, 82);
+$bg-light: rgb(61, 173, 165);
+$bg-l-dark: rgb(50, 175, 177);
+$bg-white: aliceblue;
+$f-c-grey: rgb(96, 112, 111);
+$f-main: 'Space Mono', sans-serif;
+@import '../../mixins.scss';
+
+.form {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 20px;
+
+  background-color: white;
+
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 20px 15px;
+  max-width: 320px;
+  margin: 0 auto;
+
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.field {
+  &__label {
+    text-align: left;
+    text-transform: capitalize;
+    color: $f-c-grey;
+    padding-bottom: 5px;
+  }
+
+  &__bill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &-input {
+      width: 290px;
+      padding: 0 15px;
+
+      background-color: $bg-white;
+      border: none;
+      font-family: $f-main;
+      background-image: url(../../images/icon-dollar.svg);
+      background-repeat: no-repeat;
+      background-position: 5% 50%;
+    }
+  }
+
+  &__tip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    place-items: center;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-num {
+      font-family: $f-main;
+      width: 90px;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+      background-color: $bg-main;
+      color: $bg-white;
+      height: 30px;
+      transition: all 0.2s;
+      font-size: 14px;
+      border-radius: 5px;
+
+      &:hover:not(:last-child), &:focus:not(:last-child) {
+        background-color: $bg-light;
+        color: $bg-main;
+      }
+
+      &:focus:not(:last-child) {
+        transform: scale(0.9);
+        font-size: 16px;
+      }
+    }
+
+    &-custom {
+      width: fit-content;
+      margin: 0;
+    }
+  }
+
+  &__people {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &-input {
+      width: 290px;
+      padding: 0 15px;
+
+      background-color: $bg-white;
+      background-image: url(../../images/icon-person.svg);
+      background-repeat: no-repeat;
+      background-position: 5% 50%;
+
+      &::placeholder {
+        font-family: $f-main;
+      }
+    }
+  }
+}
+
+.results {
+  background-color: $bg-main;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  &__value {
+    color: $bg-light;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__header {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: $bg-white;
+  }
+
+  &__subheader {
+    margin: 0;
+    font-size: 9px;
+    color: $bg-l-dark;
+    align-self: flex-start;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__reset {
+    background-color: rgb(0, 82, 82);
+    width: 75%;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: $f-main;
+    transition: all 0.2s;
+    color: $bg-l-dark;
+
+    &:hover {
+      background-color: $bg-light;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      border: 1px solid $bg-l-dark;
+      color: $f-c-grey;
+    }
+    
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.input {
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  font-family: $f-main;
+  direction: rtl;
+  color: $f-c-grey;
+
+  &:focus, &:hover {
+    outline: none;
+    box-shadow: 0 0 0 2px $bg-light;
+  }
+
+  &:active {
+    transform: none;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.custom {
+  background-color: $bg-white;
+  text-align: center;
+}
+
+@include onTablet {
+  .form {
+    max-width: 768px;
+    flex-direction: row;
+  }
+
+  .fields {
+    width: 45%;
+  }
+
+  .field {
+    &__bill-input {
+      width: 300px;
+      padding: 0 15px;
+    }
+
+    &__people-input {
+      width: 300px;
+      padding: 0 15px;
+    }
+
+    &__tip {
+      place-items: start;
+    }
+  }
+
+  .results {
+    width: 45%;
+  }
+}

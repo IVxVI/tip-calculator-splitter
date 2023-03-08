@@ -1,0 +1,12 @@
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 6px;
+  }
+}
