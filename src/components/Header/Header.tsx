@@ -1,3 +1,4 @@
+import React from 'react';
 import './Header.scss';
 
 export const Header:React.FC = () => (
@@ -7,4 +8,4 @@ export const Header:React.FC = () => (
       <h2 className="header__item">tter</h2>
     </div>
   </>
-)
+);
