@@ -4,7 +4,7 @@
 
 And this is a simple tip calculator app built using React. It allows you to calculate the tip and total amount of a bill based on the bill amount, the number of people splitting the bill, and the percentage of the tip. You can also input a custom tip percentage, and reset the form to its initial state.
 
-Try it out! [DEMO]()
+Try it out! [DEMO](https://ivxvi.github.io/tip-calculator-splitter/)
 
 ## 🛠 Technologies Used
 
