@@ -186,7 +186,7 @@ $f-main: 'Space Mono', sans-serif;
   height: 30px;
   border-radius: 5px;
   font-family: $f-main;
-  direction: rtl;
+  text-align: right;
   color: $f-c-grey;
 
   &:focus, &:hover {

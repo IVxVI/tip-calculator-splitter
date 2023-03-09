@@ -44,7 +44,7 @@ export const Main: React.FC = () => {
               type="number"
               id="billImput"
               className="field__bill-input input"
-              value={billValue}
+              placeholder={`${billValue}`}
               onChange={handleBillValue}
             />
           </label>
@@ -83,10 +83,10 @@ export const Main: React.FC = () => {
           <label className="field__label" htmlFor="people">
             Number of People
             <input
-              type="number"
+              type="text"
               id="people"
               className="field__people-input input"
-              value={numberOfPeople}
+              placeholder={`${numberOfPeople}`}
               onChange={handleNumberOfPeople}
               min="1"
             />
