@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/tip-calculator/static/css/main.a3a802a5.chunk.css",
-    "main.js": "/tip-calculator/static/js/main.4c96ce90.chunk.js",
-    "main.js.map": "/tip-calculator/static/js/main.4c96ce90.chunk.js.map",
-    "runtime-main.js": "/tip-calculator/static/js/runtime-main.0a98031e.js",
-    "runtime-main.js.map": "/tip-calculator/static/js/runtime-main.0a98031e.js.map",
-    "static/js/2.673c84bd.chunk.js": "/tip-calculator/static/js/2.673c84bd.chunk.js",
-    "static/js/2.673c84bd.chunk.js.map": "/tip-calculator/static/js/2.673c84bd.chunk.js.map",
-    "index.html": "/tip-calculator/index.html",
-    "static/css/main.a3a802a5.chunk.css.map": "/tip-calculator/static/css/main.a3a802a5.chunk.css.map",
-    "static/js/2.673c84bd.chunk.js.LICENSE.txt": "/tip-calculator/static/js/2.673c84bd.chunk.js.LICENSE.txt",
-    "static/media/Main.scss": "/tip-calculator/static/media/icon-person.65bfd204.svg"
+    "main.css": "/tip-calculator-splitter/static/css/main.c3849f43.chunk.css",
+    "main.js": "/tip-calculator-splitter/static/js/main.4c96ce90.chunk.js",
+    "main.js.map": "/tip-calculator-splitter/static/js/main.4c96ce90.chunk.js.map",
+    "runtime-main.js": "/tip-calculator-splitter/static/js/runtime-main.095834de.js",
+    "runtime-main.js.map": "/tip-calculator-splitter/static/js/runtime-main.095834de.js.map",
+    "static/js/2.673c84bd.chunk.js": "/tip-calculator-splitter/static/js/2.673c84bd.chunk.js",
+    "static/js/2.673c84bd.chunk.js.map": "/tip-calculator-splitter/static/js/2.673c84bd.chunk.js.map",
+    "index.html": "/tip-calculator-splitter/index.html",
+    "static/css/main.c3849f43.chunk.css.map": "/tip-calculator-splitter/static/css/main.c3849f43.chunk.css.map",
+    "static/js/2.673c84bd.chunk.js.LICENSE.txt": "/tip-calculator-splitter/static/js/2.673c84bd.chunk.js.LICENSE.txt",
+    "static/media/Main.scss": "/tip-calculator-splitter/static/media/icon-person.65bfd204.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a98031e.js",
+    "static/js/runtime-main.095834de.js",
     "static/js/2.673c84bd.chunk.js",
-    "static/css/main.a3a802a5.chunk.css",
+    "static/css/main.c3849f43.chunk.css",
     "static/js/main.4c96ce90.chunk.js"
   ]
 }
