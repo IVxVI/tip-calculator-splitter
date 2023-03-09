@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ivxvi.github.io/tip-calculator",
-  "name": "tip-calculator",
+  "name": "splitter",
+  "homepage": "https://ivxvi.github.io/splitter",
   "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
